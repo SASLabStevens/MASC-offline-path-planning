@@ -31,15 +31,13 @@ This picture below is MASC offline Path Planning Architecture.
 
 - Build a folder named UAV in document/example folder. Put the package under the new building folder named UAV. 
 
-    
 ## Running MASC Examples
 1.  Open model by running the command listed below.
    ```
    navigationModel = 'pathFollowing';
    open_system(navigationModel);
-   ```
-
-2. Initiate the model parameters by running
+   ``` 
+2.  Initiate the model parameters by running 
    ```
    plantDataDictionary = Simulink.data.dictionary.open('pathFollowingData.sldd');
    plantDataSet = getSection(plantDataDictionary,'Design Data');
@@ -49,13 +47,11 @@ This picture below is MASC offline Path Planning Architecture.
    
    % Switch to low-fidelity model
    assignin(plantDataSet,'useHighFidelity',0);
-   ```  
-   
-3.  Set up the airport coordinates and engine malfunction position for generating the discretized reference trajectory
+   ``` 
+3.  Set up the airport coordinates and engine malfunction position for generating the discretized reference trajectory 
    ```
    Run the Get_Discretized_Point program in the MATLAB terminal.
-   ```  
-   
+   ``` 
 4.  Feed those discretized trajectory point to the model and then click the run button to start the simulink model first.   
    ```
    assignin(plantDataSet,'useHighFidelity',0);
