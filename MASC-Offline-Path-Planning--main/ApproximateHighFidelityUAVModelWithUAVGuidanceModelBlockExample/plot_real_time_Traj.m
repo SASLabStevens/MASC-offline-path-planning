@@ -1,1 +1,0 @@
-plot3(X.Data,Y.Data,Z.Data)
