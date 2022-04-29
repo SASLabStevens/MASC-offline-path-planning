@@ -1,6 +1,6 @@
 # MASC For Landing Trajecotory Prediction and Optimal Landing Areas Selection
 
-This repository contains MASC Online navigation scheme, with support of Non linear guidance logic, a high fidelity simulation environment(X-Plane), and User Datagram Protocol (UDP) based interface. The system takes in landing zone coordinates and position coordinates where engine is malfunction. It later navigates the engine-out airplane to the approachable safty landing position in real-time. A online path planning and guidance demonstration of the system can be found here -> https://drive.google.com/file/d/1WmX2kXaYxDslZy5klvJAoZgwgKunmYe_/view?usp=sharing
+This repository contains MASC offline landing trajectory prediction and feasibility evaluation for backup landing areas, with support of Nonlinear guidance logic, UAV Guidance Model from MATLAB, and mathematic path discretization tool. The system takes in discretized reference trajectory to calculate the predicted landing path for evaluating the feasibility of the landing zone. This scheme run under the acceleration mode. The compile-time proves the less computation demanding. An online path planning and guidance demonstration of the system can be found here -> https://drive.google.com/file/d/1WmX2kXaYxDslZy5klvJAoZgwgKunmYe_/view?usp=sharing
 
 This picture below is MASC offline Path Planning Architecture.
 <p align='center'>
